@@ -1,0 +1,254 @@
+body{
+    background-color:blueviolet;
+}
+*{
+    margin: 0;
+}
+.primary-nav{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(90,45,13);
+}
+.primary-nav img{
+    aspect-ratio: 25/16;
+    height: 60px;
+    margin-top: 4px;
+}
+.primary-text{
+    font-family: 'heebo' sans-serif;
+    line-height: 0px;
+    margin-left: 11px;
+}
+.primary-text1{
+    margin-left: 11px;
+    margin-top: 25px;
+}
+.primary-text2{
+    margin-left: 11px;
+    margin-top: 25px;
+}
+
+.search-bar{
+    margin-top: 20px;
+}
+.primary-sub1{
+    margin-top: -20px;
+    margin-left: 10px;
+}
+.primary-sub2{
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.primary-sub{
+    font-family: 'heebo' sans-serif;
+    font-weight: 600;
+    margin-top: 19px;
+    margin-left: -57px;
+}
+body{
+    background-color:rgb(138, 43, 226);
+}
+.primary-nav{
+    display: flex;
+
+}
+.nav-items{
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-loc{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+.nav-loc svg{
+    display: flex;
+    
+}
+.cart{
+    margin-top: 20px;
+    margin-left: 40px;
+} 
+.cart h6{
+    margin-top: -5px;
+}
+
+.second-nav{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(125,62,18);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.second-nav a{
+    font-size: 30px;
+    text-decoration: none;
+    color: snow;
+}
+.second-nav a:hover{
+    color: skyblue;
+    border: 1px skyblue solid;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: -10px;
+}
+
+.hero-section{
+    /* background-image: url("home-1.jpg"); */
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-msg {
+    height: 40px;
+    background-color: rgb(90,45,13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+}
+.hero-msg p{
+    color: white;
+}
+
+.carousel slide{
+    height: 20px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-size: 0.85rem;
+    margin-bottom: 25px;
+}
+.hero-msg a:hover{
+    color: red;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.shop-section{
+   
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(119, 51, 51, 0.196);
+}
+.box{
+    /* border: 2px solid black; */
+    height: 400px;
+    width: 80%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+    vertical-align: top;
+     
+  
+}
+
+.box>div{
+    width: 150px;
+    height: 100px;
+    margin-top: 1 rem;
+    margin-bottom: 1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
+.box p{
+    color: black ;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 25px;
+}
+.box h2{
+    margin-left: 1rem;
+}
+.box1{
+    height: 400px;
+    width: 80%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    background-size: cover;
+    flex-wrap: wrap;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+.box1 p{
+    color: black ;
+    margin-right: 1rem;
+    font-size: 25px;
+}
+.box1 h2{
+    margin-left: 1rem;
+}
+.multi-item-carousel{
+    .carousel-inner{
+      > .item{
+        transition: 500ms ease-in-out left;
+      }
+      .active{
+        &.left{
+          left:-33%;
+        }
+        &.right{
+          left:33%;
+        }
+      }
+      .next{
+        left: 33%;
+      }
+      .prev{
+        left: -33%;
+      }
+      @media all and (transform-3d), (-webkit-transform-3d) {
+        > .item{
+    /* use your favourite prefixer here */
+          transition: 500ms ease-in-out left;
+          transition: 500ms ease-in-out all;
+          backface-visibility: visible;
+          transform: none!important;
+        }
+      }
+    }
+    .carouse-control{
+      &.left, &.right{
+        background-image: none;
+      }
+    }
+}
+  
+  /* non-related styling: */
+  body{
+    background: #333;
+    color: #ddd;
+  }
+  h1{
+    color: white;
+    font-size: 2.25em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+  }
